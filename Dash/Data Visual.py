@@ -13,7 +13,7 @@ header = html.H1(
     id="header"
 )
 
-fig = p.bar(file,x="Date",y="Sales")
+fig = p.line(file,x="Date",y="Sales")
 visual = dcc.Graph(
     id = "graph",
     figure= fig
